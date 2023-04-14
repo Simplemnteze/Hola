@@ -38,6 +38,7 @@ public class Ejercicio6 {
             System.out.println("3. Multiplicar");
             System.out.println("4. Dividir");
             System.out.println("5. Salir");
+            System.out.println("Elija una opcion");
             opcion = leer.nextInt();
             switch (opcion) {
                 case 1:

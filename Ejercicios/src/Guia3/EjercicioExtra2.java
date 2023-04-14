@@ -24,6 +24,7 @@ valores finales de cada variable. Utilizar sólo una variable auxiliar.
         int C = 3;
         int D = 4;
         int aux;
+        System.out.println("A " + A + ", B " + B + ", C " + C + ", D " + D);
         aux = C;
         C = A;
         A = D;

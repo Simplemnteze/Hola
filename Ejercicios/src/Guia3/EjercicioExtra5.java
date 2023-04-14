@@ -5,6 +5,8 @@
  */
 package Guia3;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Ezequiel
@@ -25,7 +27,23 @@ al descuento) y determine el importe en efectivo a pagar por dicho
 socio.
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner leer = new Scanner(System.in);
+        char tipoSocio;
+       
+        System.out.println("Ingrese Tipo de socio A/B/C");
+        tipoSocio = leer.next().charAt(0);
+        System.out.println("Ingrese costo del tratamiento");
+        double costo = leer.nextDouble();
+        
+        switch (tipoSocio) {
+            case 'A': System.out.println("Pasa socio A el importe a pagar es " + (costo*0.50));
+            break;
+            case 'B': System.out.println("Para socio B el importe a pagar es " + (costo - (costo*0.35)));
+            break;
+            case 'C': System.out.println("Para socio C el importe a pagar es " + (costo));
+            break;
+            default: System.out.println("Tipo de socio invalido.");
+        }
     }
     
 }
