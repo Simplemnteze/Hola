@@ -46,7 +46,7 @@ public class Ejercicio3 {
             
         }else{
             System.out.println("La cantidad de yenes es de: "+(129.852 * cantidadEuros));
-    }
-            
         }
+            
+    }
 }

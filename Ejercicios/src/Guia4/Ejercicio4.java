@@ -34,7 +34,7 @@ public class Ejercicio4 {
     public static boolean primo(int num){
         
         boolean res = true;   
-        for (int i = 2; i < Math.sqrt(num) ; i++){
+        for (int i = 2; i <= Math.sqrt(num) ; i++){
             if (num%i == 0){
                 res = false;
                 break;
