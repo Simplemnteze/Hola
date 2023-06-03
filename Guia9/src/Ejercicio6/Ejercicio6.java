@@ -3,23 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package EjercicioExtra6;
+package Ejercicio6;
 
-import EjercicioExtra6.entidades.Rectangulo2;
+import Ejercicio6.entidades.Curso;
+import Ejercicio6.servicio.CursoServicio;
 
 /**
  *
  * @author Ezequiel
  */
-public class EjercicioExtra6 {
+public class Ejercicio6 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Rectangulo2 rectangulo1 = new Rectangulo2(4, 6);
-        
-        System.out.println("El área del rectángulo es: "+rectangulo1.calcular_area());
+        CursoServicio cs = new CursoServicio();
+        Curso curso = cs.crearCurso();
+        System.out.println(cs.calcularGananciaSemanal(curso));
+        System.out.println(curso);
     }
     
 }

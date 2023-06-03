@@ -3,23 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package EjercicioExtra6;
+package EjercicioExtra2;
 
-import EjercicioExtra6.entidades.Rectangulo2;
+import EjercicioExtra2.entidades.NIF;
+import EjercicioExtra2.servicio.NIFServicio;
+import java.util.Scanner;
 
 /**
  *
  * @author Ezequiel
  */
-public class EjercicioExtra6 {
+public class EjercicioExtra2 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Rectangulo2 rectangulo1 = new Rectangulo2(4, 6);
-        
-        System.out.println("El área del rectángulo es: "+rectangulo1.calcular_area());
+    Scanner leer = new Scanner(System.in);
+    NIFServicio S1 = new NIFServicio();
+    NIF N1 = S1.crearNif();
+    
+    S1.mostrar(N1);
     }
     
 }
